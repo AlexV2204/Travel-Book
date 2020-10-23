@@ -1,0 +1,78 @@
+.navbar {
+    background-color: #183153;
+    height: auto;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.navbar-mini {
+    background-color: #183153;
+    height: auto;
+    color: whitesmoke;
+    position: absolute;
+    visibility: hidden;
+}
+
+#menu {
+    visibility: hidden;
+    position: absolute;
+    background-color: #183153;
+    color: whitesmoke;
+}
+
+.fa-plane-departure, .fa-user {
+    color: #ffd43b;
+    cursor: pointer;
+}
+
+.fa-bars {
+    color: #ffd43b;
+    cursor: pointer;
+    font-size: 5vh;
+}
+
+.titre {
+    cursor: pointer;
+}
+
+.onglet {
+    cursor: pointer;
+    text-align: center;
+}
+
+.onglet:hover {
+    background-color: #ffd43b;
+    color: #183153;
+    border-radius: 5%;
+}
+
+.promo {
+    color: rgb(221, 34, 34);
+    cursor: pointer;
+    text-align: center;
+}
+
+.promo:hover {
+    background-color: #ffd43b;
+    color: #d40e14;
+    border-radius: 5%;
+}
+
+footer .navbar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+}
+
+@media (max-width: 625px) {
+    .navbar {
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    .navbar-mini {
+        position: static;
+        visibility: visible;
+    }
+}
