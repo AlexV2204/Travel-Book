@@ -1,3 +1,14 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
 .navbar {
     background-color: #183153;
     height: auto;
@@ -20,7 +31,7 @@
     color: whitesmoke;
 }
 
-.fa-plane-departure, .fa-user {
+header .fa-plane-departure, .fa-user {
     color: #ffd43b;
     cursor: pointer;
 }
@@ -59,10 +70,32 @@
 }
 
 footer .navbar {
-    width: 100%;
     position: absolute;
+    width: 100%;
     bottom: 0;
     justify-content: center;
+}
+
+.card {
+    height: 65vh;
+    width: 50vh;
+    margin: 10vh 5vh 10vh 0;
+}
+
+.card-img-top {
+    height: 30vh;
+    width: 50vh;
+}
+
+.btn-primary {
+    background-color: #183153;
+    color: whitesmoke;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ffd43b;
+    color: #183153;
 }
 
 @media (max-width: 625px) {
@@ -74,5 +107,33 @@ footer .navbar {
     .navbar-mini {
         position: static;
         visibility: visible;
+    }
+
+    footer .navbar {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 995px) {
+    .card, .card-img-top {
+        width: 45vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .card, .card-img-top {
+        width: 40vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .card, .card-img-top {
+        width: 40vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .card, .card-img-top {
+        width: 60vh;
     }
 }
